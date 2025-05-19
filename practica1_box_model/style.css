@@ -14,8 +14,18 @@
         - Se le asigna un padding.
         - Se le asigna un margin.
         - Se le asigna un border.
-*/
+        
+    Margin :
+    - Determina el espacio entre los elementos.
+    - Solo aplica a los elementos display block.  
 
+        
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .box{
     border-top-color: burlywood;
     border-top-style: solid;
@@ -26,7 +36,7 @@
     border-bottom-width: 5px;
 
     border-right-color: rgb(135, 222, 186);
-    border-right-style: solidgit;
+    border-right-style: dotted;
     border-right-width: 4px;
 
     border-left-color: rgb(128, 52, 56);
@@ -35,19 +45,33 @@
 }
 
 .box1{
+    margin: 20px 40px 68px 100px;
     background: steelblue;
     display: block;
-    height: 100px;
+    height: 200px;
     padding: 50px 45px 3px;
-
-
+    width: 300px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 100px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 25px;
 }
 
 .box2{
+    margin-top: 100px;
     background: tomato;
     display: block;
     height: 200px;
     padding: 2px 4px 6px 8px;
+    opacity: 0.5;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    justify-content: center;
+    padding: 50px;
 }
 
 /*
